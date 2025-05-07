@@ -155,6 +155,64 @@
                 flex-direction: column;
             }
         }
+
+        .inventions-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .inventions-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .invention-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .invention-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .invention-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .invention-card p {
+            color: #34495e;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .inventions-section {
+                padding: 15px;
+            }
+
+            .invention-card {
+                padding: 15px;
+            }
+
+            .inventions-section h2 {
+                font-size: 1.5em;
+            }
+
+            .invention-card h3 {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -214,6 +272,37 @@
             </div>
         </article>
     </main>
+
+    <div>
+        <section class="inventions-section">
+            <h2>Revolutionary Inventions That Changed the World</h2>
+            
+            <div class="invention-card">
+                <h3>🧵 Spinning Jenny (1764)</h3>
+                <p>The Spinning Jenny, invented by James Hargreaves in 1764, revolutionized the textile industry by allowing a single worker to spin multiple spools of thread at the same time. Before this invention, spinning was slow and done one thread at a time. The Spinning Jenny made fabric production much faster and cheaper, helping kickstart the Industrial Revolution and the rise of factories.</p>
+            </div>
+
+            <div class="invention-card">
+                <h3>💡 Light Bulb (1879)</h3>
+                <p>The modern electric light bulb was developed by Thomas Edison in 1879 after experimenting with many materials to find the perfect filament. While others had tried to create electric lights before him, Edison's version lasted longer and was practical for everyday use. This invention brought safe, clean lighting to homes and streets, replacing gas lamps and candles.</p>
+            </div>
+
+            <div class="invention-card">
+                <h3>☎️ Telephone (1876)</h3>
+                <p>Alexander Graham Bell invented the telephone in 1876, changing the way people communicated forever. For the first time, human voices could be transmitted over wires from one place to another. This breakthrough laid the foundation for the global communication systems we use today, including cell phones and the internet.</p>
+            </div>
+
+            <div class="invention-card">
+                <h3>✈️ Wright Flyer - First Airplane (1903)</h3>
+                <p>The Wright Flyer, built by Orville and Wilbur Wright, was the world's first successful powered airplane. On December 17, 1903, it flew for 12 seconds in North Carolina, marking the beginning of human flight. Though the flight was short, it proved that controlled, powered flight was possible, leading to the aviation industry we rely on today.</p>
+            </div>
+
+            <div class="invention-card">
+                <h3>🚗 Automobile (1886)</h3>
+                <p>The first automobile powered by an internal combustion engine was built by Karl Benz in 1886. His three-wheeled vehicle could travel short distances using gasoline and was the beginning of modern cars. The invention of the automobile transformed transportation, allowing people to travel faster, farther, and with more independence.</p>
+            </div>
+        </section>
+    </div>
 
     <footer>
         © 2025 Echoes of Change
