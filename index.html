@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Change - Historical Timeline</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f5f6fa;
+            --timeline-color: #e74c3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background-color: var(--timeline-color);
+        }
+
+        .event {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+        }
+
+        .event::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: var(--timeline-color);
+            border-radius: 50%;
+        }
+
+        .year {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--timeline-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .description {
+            margin-bottom: 1.5rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .ar-button {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .info-button {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .event {
+                margin-left: 40px;
+            }
+
+            .event::before {
+                left: -40px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Echoes of Change</h1>
+        <p>Explore pivotal moments in history through interactive AR experiences</p>
+    </header>
+
+    <main class="timeline">
+        <article class="event">
+            <div class="year">1764</div>
+            <h2 class="title">Spinning Jenny Invented</h2>
+            <p class="description">James Hargreaves revolutionizes textile production with the Spinning Jenny, marking the beginning of the Industrial Revolution.</p>
+            <div class="buttons">
+                <a href="ar/spinning-jenny.html" class="button ar-button">View AR</a>
+                <a href="https://en.wikipedia.org/wiki/Spinning_jenny" target="_blank" class="button info-button">More Info</a>
+            </div>
+        </article>
+
+        <article class="event">
+            <div class="year">1876</div>
+            <h2 class="title">Telephone Invented</h2>
+            <p class="description">Alexander Graham Bell patents the first practical telephone, revolutionizing long-distance communication.</p>
+            <div class="buttons">
+                <a href="ar/telephone.html" class="button ar-button">View AR</a>
+                <a href="https://en.wikipedia.org/wiki/Telephone" target="_blank" class="button info-button">More Info</a>
+            </div>
+        </article>
+
+        <article class="event">
+            <div class="year">1879</div>
+            <h2 class="title">Light Bulb Invented</h2>
+            <p class="description">Thomas Edison perfects the first commercially practical incandescent light bulb, illuminating the modern world.</p>
+            <div class="buttons">
+                <a href="ar/lightbulb.html" class="button ar-button">View AR</a>
+                <a href="https://en.wikipedia.org/wiki/Incandescent_light_bulb" target="_blank" class="button info-button">More Info</a>
+            </div>
+        </article>
+
+        <article class="event">
+            <div class="year">1886</div>
+            <h2 class="title">First Automobile</h2>
+            <p class="description">Karl Benz patents the Benz Patent-Motorwagen, considered the first practical automobile powered by an internal combustion engine.</p>
+            <div class="buttons">
+                <a href="ar/automobile.html" class="button ar-button">View AR</a>
+                <a href="https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen" target="_blank" class="button info-button">More Info</a>
+            </div>
+        </article>
+
+        <article class="event">
+            <div class="year">1903</div>
+            <h2 class="title">First Powered Flight</h2>
+            <p class="description">The Wright brothers achieve the first successful powered flight in the Wright Flyer, ushering in the age of aviation.</p>
+            <div class="buttons">
+                <a href="ar/wright-flyer.html" class="button ar-button">View AR</a>
+                <a href="https://en.wikipedia.org/wiki/Wright_Flyer" target="_blank" class="button info-button">More Info</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        © 2025 Echoes of Change
+    </footer>
+</body>
+</html> 
