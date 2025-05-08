@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>Telephone - 3D & AR View</title>
+    <title>Edison's Light Bulb - 3D & AR View</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         html, body {
@@ -147,28 +147,29 @@
         </div>
 
         <div class="viewer-container">
-            <model-viewer
-                src="telephone.glb"
-                alt="Alexander Graham Bell's Telephone model"
-                ar
-                ar-modes="webxr scene-viewer quick-look"
-                camera-controls
-                environment-image="neutral"
-                shadow-intensity="1"
-                auto-rotate
-                camera-orbit="0deg 75deg 105%"
-                min-camera-orbit="auto auto 50%"
-                max-camera-orbit="auto auto 150%"
-                touch-action="pan-y"
-                scale="0.05 0.05 0.05"
-                ar-scale="auto"
-                ar-placement="floor"
-                interaction-prompt="auto"
-                interaction-prompt-style="basic"
-                loading="eager"
-                reveal="interaction"
-                ar-button>
-            </model-viewer>
+        <model-viewer
+        src="telephone.glb"
+        alt="Alexander Graham Bell's Telephone model"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        environment-image="neutral"
+        shadow-intensity="1"
+        auto-rotate
+        camera-orbit="0deg 75deg 105%"
+        min-camera-orbit="auto auto 50%"
+        max-camera-orbit="auto auto 150%"
+        touch-action="pan-y"
+        scale="0.05 0.05 0.05"
+        ar-scale="auto"
+        ar-placement="floor"
+        interaction-prompt="auto"
+        interaction-prompt-style="basic"
+        loading="eager"
+        reveal="interaction"
+        ar-button>
+    </model-viewer>
+        
         </div>
 
         <div class="view-toggle">
