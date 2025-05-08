@@ -147,7 +147,7 @@
         </div>
 
         <div class="viewer-container">
-            <model-viewer
+        <model-viewer
   src="edison_light_bulb.glb"
   alt="Light Bulb Model"
   ar
@@ -160,13 +160,12 @@
   min-camera-orbit="auto auto 50%"
   max-camera-orbit="auto auto 150%"
   touch-action="pan-y"
-  ar-scale="fixed"
+  ar-scale="auto"  <!-- key change: allow rescaling in AR -->
   ar-placement="floor"
   interaction-prompt="auto"
   interaction-prompt-style="basic"
   loading="eager"
   reveal="auto"
-  scale="0.3 0.3 0.3"
   ar-button>
 </model-viewer>
         </div>
